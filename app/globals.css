@@ -20,6 +20,15 @@
   }
 }
 
+@font-face {
+  font-family: LTSBold;
+  src: url(../assets/fonts/LTSaeada-Medium.otf);
+}
+
+@theme{
+  --font-ltsold: LTSBold;
+}
+
 :root {
   --sh-class: #7aa2f7;
   --sh-sign: #89ddff;

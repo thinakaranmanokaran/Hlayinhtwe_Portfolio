@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thinakaranmanokaran.github.io/Hlayinhtwe_Portfolio/sitemap.xml

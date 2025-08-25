@@ -1,8 +1,17 @@
+import Ecommerce from "@/assets/images/ecommerce.png"
+import Portfolio from "@/assets/images/portfolio.png"
+import Python from "@/assets/images/python.png"
+import Nltk from "@/assets/images/nltk.jpg"
+import Database from "@/assets/images/databse.png"
+import Git from "@/assets/images/git.png"
+
+import { StaticImageData } from "next/image"
+
 type Project = {
   name: string
   description: string
   link: string
-  video: string
+  video: string | StaticImageData
   id: string
 }
 
@@ -29,21 +38,52 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: "Ecommerce Application",
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
-    id: 'project1',
+      "A full-featured e-commerce web app built with TypeScript, showcasing product listings, shopping cart functionality, and seamless user interactions.",
+    link: "https://github.com/Hla-Yin-Htwe/Ecommerce-Application",
+    video: Ecommerce,
+    id: "project1",
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
-    id: 'project2',
+    name: "Personal Website",
+    description:
+      "A personal portfolio site showcasing projects, blogs, and experience.",
+    link: "https://hlayinhtwe.github.io",
+    video: Portfolio,
+    id: "project2",
+  },
+  {
+    name: "Python Programming Assignments",
+    description:
+      "Coursework and example assignments from a Python programming course, covering real-world problem solving.",
+    link: "https://github.com/Hla-Yin-Htwe/PythonProgramming",
+    video: Python,
+    id: "project3",
+  },
+  {
+    name: "NLP with Python and NLTK",
+    description:
+      "Jupyter notebooks containing solutions and exercises from the 'NLP with Python' tutorial using NLTK.",
+    link: "https://github.com/Hla-Yin-Htwe/NLP-with-Python-and-NLTK-Solutions",
+    video: Nltk,
+    id: "project4",
+  },
+  {
+    name: "Database Project",
+    description:
+      "Database-related coursework and implementations demonstrating SQL and data management concepts.",
+    link: "https://github.com/Hla-Yin-Htwe", // replace with actual repo if available
+    video: Database,
+    id: "project5",
+  },
+  {
+    name: "Git & Version Control",
+    description:
+      "Hands-on exploration of Git commands, workflows, and best practices for collaborative development.",
+    link: "https://github.com/Hla-Yin-Htwe", // replace with actual repo if available
+    video: Git,
+    id: "project6",
   },
 ]
 
@@ -106,20 +146,20 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
+    link: 'https://github.com/Hla-Yin-Htwe',
   },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
-  },
+  // {
+  //   label: 'Twitter',
+  //   link: 'https://twitter.com/ibelick',
+  // },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/hla-yin-htwe-6a11b02b8/',
   },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
-  },
+  // {
+  //   label: 'Mail',
+  //   link: 'mailto:hlayinhtwe111@gmail.com',
+  // },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'hlayinhtwe111@gmail.com'

@@ -19,6 +19,7 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import Image from 'next/image'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -135,11 +136,39 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <div className="flex-1">
+        <div className="flex-1 space-y-4 text-lg">
           <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
+            👋 Hi, I’m Hla Yin Htwe, a final-year Computer Science student graduating in
+            <span className="font-semibold px-1 dark:text-zinc-200">January 2026</span>.
           </p>
+
+          <p className="text-zinc-600 dark:text-zinc-400">
+            I recently completed a <span className="font-semibold px-1 dark:text-zinc-200">3-month internship as a Frontend Developer</span>,
+            where I built an <span className="font-semibold px-1 dark:text-zinc-200">Admin Dashboard for a Catering Management System</span>
+            using <span className="font-semibold px-1 dark:text-zinc-200">React, Tailwind CSS, and Flowbite</span>, integrated with a
+            <span className="font-semibold px-1 dark:text-zinc-200">Laravel + PHP backend</span>.
+          </p>
+
+          <p className="text-zinc-600 dark:text-zinc-400">
+            Alongside web development, I have a strong interest in
+            <span className="font-semibold px-1 dark:text-zinc-200">Data Analytics</span>.
+            I enjoy working with <span className="font-semibold px-1 dark:text-zinc-200">Python, SQL, Excel</span>, and visualization tools
+            like <span className="font-semibold px-1 dark:text-zinc-200">Power BI and Tableau</span> to explore datasets, uncover insights,
+            and solve business problems.
+          </p>
+
+          <p className="text-zinc-600 dark:text-zinc-400">
+            My goal is to start my career as a <span className="font-semibold px-1 dark:text-zinc-200">Data Analyst</span>,
+            where I can apply my skills in <span className="font-semibold px-1 dark:text-zinc-200">data cleaning, visualization, and storytelling</span>
+            to support decision-making. I’m especially passionate about turning raw data into clear,
+            actionable insights that add real value.
+          </p>
+
+          <p className="text-zinc-600 dark:text-zinc-400">
+            When I’m not coding or analyzing data, I like to keep learning about
+            <span className="font-semibold px-1 dark:text-zinc-200">emerging tech, business intelligence, and data-driven solutions</span>.
+          </p>
+
         </div>
       </motion.section>
 
@@ -152,7 +181,7 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <Image src={project.video} alt="" className='h-60 object-cover rounded-3xl' />
               </div>
               <div className="px-1">
                 <a
@@ -163,7 +192,7 @@ export default function Personal() {
                   {project.name}
                   <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
                 </a>
-                <p className="text-base text-zinc-600 dark:text-zinc-400">
+                <p className="text-base text-zinc-600 dark:text-zinc-400 line-clamp-2">
                   {project.description}
                 </p>
               </div>
@@ -172,7 +201,7 @@ export default function Personal() {
         </div>
       </motion.section>
 
-      <motion.section
+      {/* <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
@@ -208,9 +237,9 @@ export default function Personal() {
             </a>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
-      <motion.section
+      {/* <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
@@ -244,7 +273,7 @@ export default function Personal() {
             ))}
           </AnimatedBackground>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section
         variants={VARIANTS_SECTION}
