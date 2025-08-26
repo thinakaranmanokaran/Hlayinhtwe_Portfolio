@@ -1,1 +1,143 @@
 @import "tailwindcss";
+
+/* ----------------------------------------------------------
+   FONT: Array
+---------------------------------------------------------- */
+@font-face {
+    font-family: "Array";
+    src: url("./assets/fonts/Array_Complete/Array-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Array";
+    src: url("./assets/fonts/Array_Complete/Array-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Array";
+    src: url("./assets/fonts/Array_Complete/Array-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Wide variants */
+@font-face {
+    font-family: "Array Wide";
+    src: url("./assets/fonts/Array_Complete/Array-Wide.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Array Wide";
+    src: url("./assets/fonts/Array_Complete/Array-SemiboldWide.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Array Wide";
+    src: url("./assets/fonts/Array_Complete/Array-BoldWide.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* ----------------------------------------------------------
+   FONT: Satoshi
+---------------------------------------------------------- */
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Italics */
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-Italic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-LightItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("./assets/fonts/Satoshi_Complete/Satoshi-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Author";
+    src: url("./assets/fonts/Author_Complete/Author-Regular.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ----------------------------------------------------------
+   THEME DECLARATIONS
+---------------------------------------------------------- */
+@theme {
+    /* Colors */
+    --color-light: #F3F2EC;
+    --color-grey: #44444E;
+
+    /* Fonts */
+    --font-sans: "Satoshi", sans-serif;
+    --font-display: "Array", sans-serif;
+    --font-display-wide: "Array Wide", sans-serif;
+    --font-author: "Author", sans-serif;
+}
